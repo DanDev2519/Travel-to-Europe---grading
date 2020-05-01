@@ -4,8 +4,6 @@
   "private": true,
   "description": "Путешествие по Европе - Грейдирование",
   "devDependencies": {
-    "merge": ">=1.2.1",
-    "deep-extend": ">=0.5.1",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.7",
