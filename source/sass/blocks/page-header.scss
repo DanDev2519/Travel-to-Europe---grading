@@ -1,0 +1,24 @@
+.page-header__wrapper {
+  min-width: 73px;
+}
+
+.page-header__logo {
+  display: block;
+
+  margin: 31px 0;
+  padding: 8px 9px;
+}
+
+.page-header__logo-image {
+  display: block;
+
+  @include size(57px, 22px);
+}
+
+// @media #{$tablet-only} {
+
+// }
+
+// @media #{$mobile-only} {
+
+// }

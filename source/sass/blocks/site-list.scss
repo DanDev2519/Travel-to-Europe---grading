@@ -1,0 +1,30 @@
+.site-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list(43px 0 40px);
+}
+
+.site-list__item {
+  margin: 0 20px;
+}
+
+.site-list__item-link {
+  position: relative;
+  display: block;
+
+  @include setFont(14px, $darkest-blue, 17px, 500);
+
+  text-align: center;
+
+  &--color-light-red {
+    color: $light-red;
+
+    &::after {
+      @include pseudo(url("../img/icon-arrow.svg"));
+      @include size(15px, 17px);
+      bottom: -14px;
+      right: -12px;
+    }
+  }
+}

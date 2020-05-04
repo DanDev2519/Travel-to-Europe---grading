@@ -1,0 +1,56 @@
+.promo {
+  @include bgimg($dark-blue, url("../img/aleyna-rentz-desktop@1x.jpg"));
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/aleyna-rentz-desktop@2x.jpg");
+  }
+}
+
+.promo__wrapper {
+  margin-left: 55.99vw;
+  padding: 185px 0 297px 0;
+  width: 420px;
+  min-width: auto;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 29px;
+  // padding: 185px 0 0 0;
+  // margin-right: 22.55%;
+  padding: 0;
+
+  @include setFont(55px, $white, 80px, 600);
+  letter-spacing: -1.10667px;
+}
+
+.promo__description {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0 80px 0 0;
+
+  @include setFont(16px, $white, 170%, normal);
+  letter-spacing: -0.466667px;
+}
+
+.promo__link {
+  position: relative;
+  padding-right: 100px;
+  text-align: left;
+  width: 340px;
+
+  &::after {
+    @include pseudo(url("../img/icon-down-arrow.svg"));
+    @include size(16px, 16px);
+    top: 30px;
+    right: 40px;
+  }
+}
+// @media #{$tablet-only} {
+
+// }
+
+// @media #{$mobile-only} {
+
+// }

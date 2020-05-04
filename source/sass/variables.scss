@@ -1,11 +1,17 @@
 //Цвета
 $white: white;
+$dark-blue: #2c2e3f;
+$darkest-blue: #141517;
+$orange: #f17d4b;
+$light-red: #fe7865;
 
 // Размеры
 $mobile-width: 320px;
 $mobile-width-only: 767px;
 $tablet-width: 768px;
+$tablet-width-only: 1023px;
 $desktop-width: 1024px;
+$desktop-width-max: 1170px;
 
 //Медиа выражения
 $mobile: "(min-width: #{$mobile-width})";
@@ -13,15 +19,15 @@ $tablet: "(min-width: #{$tablet-width})";
 $desktop: "(min-width: #{$desktop-width})";
 
 $mobile-only: "(max-width: #{$mobile-width-only})";
+$tablet-only: "(max-width: #{$tablet-width-only})";
 
 $retina-dppx: 1.5dppx;
-
 $retina: "(min-resolution: #{$retina-dppx})";
-// @media #{$tablet} {
+// @media #{$tablet-only} {
 
 // }
 
-// @media #{$desktop} {
+// @media #{$mobile-only} {
 
 // }
 
