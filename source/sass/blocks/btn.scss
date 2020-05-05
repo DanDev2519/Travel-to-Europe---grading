@@ -11,4 +11,13 @@
   background-color: $light-red;
   border: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    background-color: $orange;
+  }
 }

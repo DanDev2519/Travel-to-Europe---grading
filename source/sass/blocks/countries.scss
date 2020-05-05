@@ -1,0 +1,145 @@
+.countries {
+  padding: 200px 0 0 0;
+  margin-bottom: -5px;
+}
+
+.countries__title {
+  position: relative;
+  width: 360px;
+  margin: 0;
+  margin-bottom: 63px;
+  padding: 0;
+
+  @include setFont(55px, $dark-blue, 80px, 600);
+  letter-spacing: -1.245px;
+
+  &::after {
+    @include pseudo();
+    @include size(228px, 4px);
+    bottom: -32px;
+    left: 0;
+    background-color: $light-red;
+  }
+}
+
+.countries_description {
+  width: 330px;
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+
+  @include setFont(16px, $blue-limpid7, 28px, normal);
+  letter-spacing: -0.466667px;
+}
+
+.countries__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+    justify-content: center;
+  // justify-content: space-around;
+  // justify-content: flex-start;
+
+  // margin: 0;
+  margin: 0 -30px;
+  // margin: 0 -5.1282% 0 0;
+
+
+  @include list(0);
+}
+
+.countries__item {
+  // margin: 0;
+  // padding: 0;
+  // &:nth-child(5) {
+  //   margin: 0 25px;
+  // }
+  margin: 0 30px;
+
+  &:nth-child(5) {
+    margin-left: 90px;
+  }
+
+    // margin: 0 calc(5.1282%) 0 0;
+
+    // &:nth-child(3n) {
+    //   margin: 0;
+    // }
+
+    // &:nth-child(4) {
+    //   margin: 0 calc(5.1282% * 2) 0 0;
+    // }
+
+    // &:nth-child(5) {
+    //   margin: 0;
+    // }
+}
+
+.countries__link {
+  position: relative;
+  display: block;
+  margin: 0 0 101px;
+
+  &:hover {
+    &::after {
+      @include pseudo();
+      @include size(100%, 100%);
+      top: 0;
+      left: 0;
+      background-color: $darkest-blue-limpid6;
+      z-index: 1;
+    }
+
+    .countries__more {
+      display: block;
+    }
+  }
+}
+
+.countries__more {
+  display: none;
+  position: absolute;
+  top: calc(50% - 77px / 2);
+  left: calc(50% - 266px / 2);
+
+  width: 266px;
+  margin: 0;
+  padding: 29px 25px;
+
+  @include setFont(14px, $white, 17px, 500);
+  letter-spacing: 2px;
+  text-align: center;
+  border: 1px solid rgba($white, 0.7);
+
+  z-index: 2;
+}
+
+.countries__name {
+  position: absolute;
+  bottom: -1px;
+  left: 67px;
+
+  width: 215px;
+  margin: 0;
+  padding: 16px 10px 17px 10px;
+
+  @include setFont(24px, $dark-blue, 29px, 500);
+  letter-spacing: -0.415px;
+  text-align: center;
+
+  background-color: $white;
+  z-index: 2  ;
+}
+
+.countries__photo {
+  // position: relative;
+  display: block;
+
+  @include size(350px, 430px);
+
+  z-index: 0;
+}
+
+
+
+

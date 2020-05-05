@@ -1,0 +1,64 @@
+.price {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__wrapper {
+  width: 300px;
+}
+
+.price__title {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 15px;
+
+  @include setFont(55px, $dark-blue, 90px, 600);
+
+  &::after {
+    @include pseudo();
+    @include size(175px, 3px);
+    bottom: -3px;
+    left: 0;
+    background-color: $light-red;
+  }
+}
+
+.price__description {
+  margin: 0;
+  padding: 33px 0 50px;
+
+  @include setFont(16px, $blue-limpid7, 170%, normal);
+}
+
+.price__contact {
+  @include setFont(22px, $darkest-blue, 34px, 500);
+}
+
+.price__phone {
+  position: relative;
+  display: block;
+
+  @include setFont(20px, $darkest-blue, 32px, normal);
+
+  &::before {
+    @include pseudo(url("../img/icon-phone.svg"));
+    @include size(30px, 30px);
+    top: 8px;
+    left: 1px;
+  }
+}
+
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include list(0);
+}
+
+.price__item {
+  width: 370px;
+}
+
+

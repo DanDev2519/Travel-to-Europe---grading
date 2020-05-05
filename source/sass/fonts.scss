@@ -41,3 +41,14 @@
   font-stretch: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"),
+    url("../fonts/poppins500.woff2") format("woff2"),
+    url("../fonts/poppins500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}

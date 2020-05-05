@@ -1,0 +1,43 @@
+.tabs {
+  @include bgimg($white, url("../img/European-map.svg"), $position: center 135px);
+  padding-bottom: 507px;
+  margin-bottom: -300px;
+}
+
+.tabs__nav-list {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin: 0 -50px 80px;
+
+  @include list(0);
+
+  &::after {
+    @include pseudo();
+    @include size(901px, 2px);
+    bottom: -2px;
+    left: 50px;
+    background-color: $blue-limpid3;
+  }
+}
+
+.tabs__nav-item {
+  margin: 0 50px 15px;
+}
+
+.tabs__nav-link {
+  @include setFont(20px, $blue-limpid3, 24px, 500);
+  letter-spacing: -0.415px;
+
+  &--active {
+    color: $light-red;
+  }
+}
+
+.tabs__content-list {
+  margin: 80px 0 0;
+
+  @include list(0);
+}

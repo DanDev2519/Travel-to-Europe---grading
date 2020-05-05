@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/montserrat500.woff2" as="font">
   <link rel="preload" href="fonts/montserrat600.woff2" as="font">
   <link rel="preload" href="fonts/montserrat700.woff2" as="font">
+  <link rel="preload" href="fonts/poppins500.woff2" as="font">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -193,14 +194,18 @@
         </ul>
         <ul class="tabs__content-list">
           <li class="tabs__content-item panel" id="Greece">
-            <h2 class="panel__title">Греция</h2>
-            <p class="panel__description">
-              На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
-              Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
-              путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
-              600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
-            </p>
-            <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            <div class="panel__wrapper">
+              <h2 class="panel__title">Греция</h2>
+              <p class="panel__description">
+                На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал.
+                Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель
+                нашего
+                путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в
+                высоту
+                600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+              </p>
+              <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/content/Tab-greece-mobile@1x.webp 1x, img/content/Tab-greece-mobile@2x.webp 2x">
@@ -224,18 +229,27 @@
                   света!
                 </p>
               </blockquote>
-              <cite class="comment__author">Влада Голицина</cite>
+              <div class="comment__author">
+                <picture>
+                  <source type="image/webp" srcset="img/content/Vlada-Galiscina@1x.webp 1x, img/content/Vlada-Galiscina@2x.webp 2x">
+                  <img class="comment__author-photo" src="img/content/Vlada-Galiscina@1x.png" srcset="img/content/Vlada-Galiscina@2x.png 2x"
+                    width="37" height="38" alt="Влада Голицина">
+                </picture>
+                <cite class="comment__author-name">Влада Голицина</cite>
+              </div>
             </div>
           </li>
-          <li class="tabs__content-item panel" id="Albania">
-            <h2 class="panel__title">Албания</h2>
-            <p class="panel__description">
-              В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем.
-              Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный
-              песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
-              состояния.
-            </p>
-            <a href="#" class="panel__link btn">Купить тур сейчас</a>
+          <li class="tabs__content-item panel" id="Albania" style="display: none;">
+            <div class="panel__wrapper">
+              <h2 class="panel__title">Албания</h2>
+              <p class="panel__description">
+                В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем.
+                Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный
+                песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
+                состояния.
+              </p>
+              <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            </div>
             <picture>
               <source type="image/webp"
                 srcset="img/content/Tab-albania-desktop@1x.webp 1x, img/content/Tab-albania-desktop@2x.webp 2x">
@@ -250,17 +264,27 @@
                   смогла вкусить все красоты природы :)
                 </p>
               </blockquote>
-              <cite class="comment__author">Маришка</cite>
+              <div class="comment__author">
+                <picture>
+                  <source type="image/webp" srcset="img/content/marishka@1x.webp 1x, img/content/marishka@2x.webp 2x">
+                  <img class="comment__author-photo" src="img/content/marishka@1x.png" srcset="img/content/marishka@2x.png 2x"
+                    width="37" height="38" alt="Маришка">
+                </picture>
+                <cite class="comment__author-name">Маришка</cite>
+              </div>
             </div>
           </li>
-          <li class="tabs__content-item panel" id="Macedonia">
-            <h2 class="panel__title">Македония</h2>
-            <p class="panel__description">
-              В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой
-              местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен
-              где находится археологический памятник Кокино в длину около 100 метров.
-            </p>
-            <a href="#" class="panel__link btn">Купить тур сейчас</a>
+          <li class="tabs__content-item panel" id="Macedonia" style="display: none;">
+            <div class="panel__wrapper">
+              <h2 class="panel__title">Македония</h2>
+              <p class="panel__description">
+                В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой
+                местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
+                Камен
+                где находится археологический памятник Кокино в длину около 100 метров.
+              </p>
+              <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            </div>
             <picture>
               <source type="image/webp"
                 srcset="img/content/Tab-macedonia-desktop@1x.webp 1x, img/content/Tab-macedonia-desktop@2x.webp 2x">
@@ -276,16 +300,25 @@
                   гору.
                 </p>
               </blockquote>
-              <cite class="comment__author">Михаил Кузьмин</cite>
+              <div class="comment__author">
+                <picture>
+                  <source type="image/webp" srcset="img/content/Mihail-Kuzmin@1x.webp 1x, img/content/Mihail-Kuzmin@2x.webp 2x">
+                  <img class="comment__author-photo" src="img/content/Mihail-Kuzmin@1x.png" srcset="img/content/Mihail-Kuzmin@2x.png 2x"
+                    width="37" height="38" alt="Михаил Кузьмин">
+                </picture>
+                <cite class="comment__author-name">Михаил Кузьмин</cite>
+              </div>
             </div>
           </li>
-          <li class="tabs__content-item panel" id="Montenegro">
-            <h2 class="panel__title">Черногория</h2>
-            <p class="panel__description">
-              Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
-              берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
-            </p>
-            <a href="#" class="panel__link btn">Купить тур сейчас</a>
+          <li class="tabs__content-item panel" id="Montenegro" style="display: none;">
+            <div class="panel__wrapper">
+              <h2 class="panel__title">Черногория</h2>
+              <p class="panel__description">
+                Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
+                берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
+              </p>
+              <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            </div>
             <picture>
               <source type="image/webp"
                 srcset="img/content/Tab-montenegro-desktop@1x.webp 1x, img/content/Tab-montenegro-desktop@2x.webp 2x">
@@ -299,17 +332,26 @@
                   Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                 </p>
               </blockquote>
-              <cite class="comment__author">Анастасия Мей</cite>
+              <div class="comment__author">
+                <picture>
+                  <source type="image/webp" srcset="img/content/Anastas-Mey@1x.webp 1x, img/content/Anastas-Mey@2x.webp 2x">
+                  <img class="comment__author-photo" src="img/content/Anastas-Mey@1x.png" srcset="img/content/Anastas-Mey@2x.png 2x"
+                    width="37" height="38" alt="Анастасия Мей">
+                </picture>
+                <cite class="comment__author-name">Анастасия Мей</cite>
+              </div>
             </div>
           </li>
-          <li class="tabs__content-item panel" id="Croatia">
-            <h2 class="panel__title">Хорватия</h2>
-            <p class="panel__description">
-              В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти
-              метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
-              сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
-            </p>
-            <a href="#" class="panel__link btn">Купить тур сейчас</a>
+          <li class="tabs__content-item panel" id="Croatia" style="display: none;">
+            <div class="panel__wrapper">
+              <h2 class="panel__title">Хорватия</h2>
+              <p class="panel__description">
+                В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти
+                метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
+                сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
+              </p>
+              <a href="#" class="panel__link btn">Купить тур сейчас</a>
+            </div>
             <picture>
               <source type="image/webp"
                 srcset="img/content/Tab-croatia-desktop@1x.webp 1x, img/content/Tab-croatia-desktop@2x.webp 2x">
@@ -325,7 +367,14 @@
                   спутать по итогу :)
                 </p>
               </blockquote>
-              <cite class="comment__author">Владимир Мулицин</cite>
+              <div class="comment__author">
+                <picture>
+                  <source type="image/webp" srcset="img/content/Vlad-Mulicstin@1x.webp 1x, img/content/Vlad-Mulicstin@2x.webp 2x">
+                  <img class="comment__author-photo" src="img/content/Vlad-Mulicstin@1x.png" srcset="img/content/Vlad-Mulicstin@2x.png 2x"
+                    width="37" height="38" alt="Владимир Мулицин">
+                </picture>
+                <cite class="comment__author-name">Владимир Мулицин</cite>
+              </div>
             </div>
           </li>
         </ul>
@@ -345,7 +394,7 @@
         </p>
       </div>
       <ul class="price__list">
-        <li class="price__item tariff">
+        <li class="price__item tariff tariff--red">
           <div class="tariff__top">
             <h3 class="tariff__title">Комплексный</h3>
             <p class="tariff__cost">$1999</p>

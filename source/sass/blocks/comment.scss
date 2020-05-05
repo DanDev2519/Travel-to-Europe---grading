@@ -1,0 +1,59 @@
+.comment {
+  width: 382px;
+  background-color: $white;
+}
+
+.comment__title {
+  position: relative;
+  margin: 0;
+  padding: 30px;
+
+  @include setFont(30px, $dark-blue, 37px, 500);
+  letter-spacing: -0.691667px;
+
+  &::after {
+    @include pseudo();
+    @include size(68px, 1px);
+    bottom: 18px;
+    left: 30px;
+    background-color: $light-red;
+  }
+}
+
+.comment__content {
+  margin: 0;
+  padding: 0;
+}
+
+.comment__text {
+  margin: 0;
+  padding: 3px 30px 10px;
+
+  @include setFont(14px, $blue-limpid7, 28px, normal);
+  letter-spacing: -0.408333px;
+}
+
+.comment__author {
+  position: relative;
+}
+
+.comment__author-photo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: block;
+  border-radius: 50%;
+}
+
+.comment__author-name {
+  display: block;
+  margin: 0;
+  padding: 30px 30px 35px 84px;
+
+  font-family: "Poppins", "Arial", sans-serif;
+
+  @include setFont(16px, $dark-blue, 24px, 500);
+
+  letter-spacing: -0.466667px;
+  font-style: normal;
+}

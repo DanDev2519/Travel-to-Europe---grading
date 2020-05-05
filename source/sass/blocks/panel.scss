@@ -1,0 +1,53 @@
+.panel {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.panel__wrapper {
+  margin-right: 45px;
+}
+
+.panel__title {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 15px;
+  width: 425px;
+
+  @include setFont(55px, $dark-blue, 90px, 600);
+  letter-spacing: -1.245px;
+
+  &::after {
+    @include pseudo();
+    @include size(175px, 3px);
+    bottom: -3px;
+    left: 0;
+    background-color: $light-red;
+  }
+}
+
+.panel__description {
+  margin: 0;
+  padding: 33px 0 50px;
+  width: 370px;
+
+  @include setFont(16px, $blue-limpid7, 28px, normal);
+  letter-spacing: -0.466667px;
+}
+
+.panel__link {
+  width: 250px;
+  padding: 30px 39px;
+}
+
+.panel__photo {
+  display: block;
+
+  @include size(430px, 596px);
+}
+
+.panel__comment {
+  position: absolute;
+  right: 0;
+  top: 115px;
+}
