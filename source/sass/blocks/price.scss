@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  align-items: flex-start;
+
+
+  padding: 35px 0 0;
 }
 
 .price__wrapper {
-  width: 300px;
+  margin: 100px -2px 0 0;
+  width: 291px;
 }
 
 .price__title {
@@ -33,32 +38,37 @@
 }
 
 .price__contact {
+  margin: 0;
+  padding: 10px 0 10px 45px;
+
   @include setFont(22px, $darkest-blue, 34px, 500);
 }
 
 .price__phone {
   position: relative;
   display: block;
+  padding: 13px 0 0;
 
   @include setFont(20px, $darkest-blue, 32px, normal);
 
   &::before {
     @include pseudo(url("../img/icon-phone.svg"));
     @include size(30px, 30px);
-    top: 8px;
-    left: 1px;
+    top: 12px;
+    left: -49px;
   }
 }
 
 .price__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
 
   @include list(0);
 }
 
 .price__item {
   width: 370px;
+  margin: 0 15px 10px;
 }
-
-
