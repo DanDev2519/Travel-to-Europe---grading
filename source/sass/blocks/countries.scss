@@ -36,43 +36,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-    justify-content: center;
-  // justify-content: space-around;
-  // justify-content: flex-start;
-
-  // margin: 0;
+  justify-content: center;
   margin: 0 -30px;
-  // margin: 0 -5.1282% 0 0;
 
 
   @include list(0);
 }
 
 .countries__item {
-  // margin: 0;
-  // padding: 0;
-  // &:nth-child(5) {
-  //   margin: 0 25px;
-  // }
   margin: 0 30px;
 
   &:nth-child(5) {
     margin-left: 90px;
   }
-
-    // margin: 0 calc(5.1282%) 0 0;
-
-    // &:nth-child(3n) {
-    //   margin: 0;
-    // }
-
-    // &:nth-child(4) {
-    //   margin: 0 calc(5.1282% * 2) 0 0;
-    // }
-
-    // &:nth-child(5) {
-    //   margin: 0;
-    // }
 }
 
 .countries__link {
@@ -128,18 +104,13 @@
   text-align: center;
 
   background-color: $white;
-  z-index: 2  ;
+  z-index: 2;
 }
 
 .countries__photo {
-  // position: relative;
   display: block;
 
   @include size(350px, 430px);
 
   z-index: 0;
 }
-
-
-
-

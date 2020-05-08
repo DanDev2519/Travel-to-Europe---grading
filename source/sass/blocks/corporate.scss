@@ -1,0 +1,17 @@
+.corporate {
+  padding-left: 4%;
+}
+
+.corporate__title {
+  margin: 0;
+  padding-bottom: 20px;
+
+  @include setFont(18px, $darkest-blue, 32px, 600);
+}
+
+.corporate__info {
+  width: 320px;
+  margin: 0;
+
+  @include setFont(14px, $darkest-blue-limpid5, 24px, normal);
+}

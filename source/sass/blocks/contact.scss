@@ -1,0 +1,44 @@
+.contact {
+  padding-left: 11%;
+}
+
+.contact__title {
+  margin: 0;
+  padding-bottom: 20px;
+
+  @include setFont(18px, $darkest-blue, 32px, 600);
+}
+
+.contact__email {
+  position: relative;
+  display: block;
+  padding: 0 0 0 40px;
+  margin: 2px 0 20px;
+
+  @include setFont(14px, $light-red, 17px, normal);
+  text-decoration-line: underline;
+
+  &::before {
+    @include pseudo(url("../img/icon-email.svg"));
+    @include size(26px, 20px);
+    top: -2px;
+    left: -1px;
+  }
+}
+
+.contact__phone {
+  position: relative;
+  display: block;
+  padding: 0 0 0 40px;
+  margin: 2px 0 20px;
+
+  @include setFont(16px, $light-red, 32px, normal);
+  text-decoration-line: underline;
+
+  &::before {
+    @include pseudo(url("../img/icon-phone-small.svg"));
+    @include size(30px, 30px);
+    top: -4px;
+    left: -1px;
+  }
+}

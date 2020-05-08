@@ -1,0 +1,29 @@
+.next-trip {
+  padding: 0 34px 0 12px;
+}
+
+.next-trip__title {
+  margin: 0;
+  padding-bottom: 20px;
+
+  @include setFont(18px, $darkest-blue, 32px, 600);
+}
+
+.next-trip__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.next-trip__list {
+  margin: 0;
+
+  @include list(0);
+}
+
+.next-trip__item {
+  padding: 0 10px 10px 0;
+
+  @include setFont(14px, $darkest-blue-limpid5, 17px, normal);
+}

@@ -1,0 +1,22 @@
+.page-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 120px 0 80px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  width: 68%;
+}
+
+.page-footer__left {
+  width: 51%;
+}
+
+.page-footer__right {
+  width: 32%;
+}

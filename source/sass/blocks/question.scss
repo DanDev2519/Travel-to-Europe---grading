@@ -1,0 +1,105 @@
+.question {
+  padding: 50px;
+  width: 656px;
+  background: $white;
+  box-shadow: 0 4px 30px $light-blue1;
+  border-radius: 5px;
+}
+
+.question__title {
+  margin: 0;
+  padding: 0 0 12px;
+
+  @include setFont(25px, $darkest-blue, 32px, 600);
+  text-align: center;
+}
+
+.question__info {
+  margin: 0;
+  padding: 0 0 5px;
+
+  @include setFont(16px, $darkest-blue, 150%, normal);
+  text-align: center;
+}
+
+.question__group {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.question__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+
+  @include list(19px 0 25px);
+}
+
+.question__item {
+  position: relative;
+}
+
+.question__error {
+  position: absolute;
+  top: -15px;
+  left: 1px;
+  padding: 0;
+  margin: 0;
+
+  @include setFont(12px, $light-red, 15px, normal);
+}
+
+.question__label {
+  position: relative;
+  display: block;
+
+  &--tel {
+    &::before {
+      @include pseudo("*");
+      color: $light-red;
+      top: 5px;
+      left: 15px;
+      z-index: 1;
+    }
+
+    &::after {
+      @include pseudo("+7");
+      @include setFont(14px, $darkest-blue, 17px, normal);
+      top: 15px;
+      left: 25px;
+      z-index: 1;
+    }
+  }
+}
+
+.question__input {
+  padding: 15px;
+  width: 269px;
+
+  @include setFont(14px, $darkest-blue, 17px, normal);
+  font-family: inherit;
+
+  background: $white;
+  border: 1px solid $blue-limpid3;
+
+  &::placeholder {
+    color: $darkest-blue;
+  }
+
+  &--tel {
+    padding-left: 50px;
+  }
+}
+
+.question__bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.question__button {
+  padding: 19px 38px 15px 40px;
+  font-family: inherit;
+}

@@ -6,7 +6,7 @@
   align-items: flex-start;
 
 
-  padding: 35px 0 0;
+  padding: 35px 0;
 }
 
 .price__wrapper {
@@ -63,6 +63,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  // width: 65.8119658%;
+  // margin: 0;
   margin: 0 -15px;
 
   @include list(0);
@@ -71,4 +73,5 @@
 .price__item {
   width: 370px;
   margin: 0 15px 10px;
+  // margin: 0 0 10px;
 }

@@ -100,13 +100,6 @@
   margin: 15px 0;
 
   @include setFont(16px, $darkest-blue, 32px, normal);
-
-  // &::before {
-  //   @include pseudo(url("../img/icon-tick-tomato.svg"));
-  //   @include size(14px, 12px);
-  //   top: 2px;
-  //   left: -31px;
-  // }
 }
 
 .tariff__link {

@@ -1,0 +1,27 @@
+.questions {
+  padding: 92px 0 50px;
+}
+
+.questions__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  min-height: 455px;
+
+  background-image: url("../img/sunset-desktop@1x.jpg"),
+    linear-gradient(90deg, $light-red 844px, $white 844px);
+
+  @media #{$retina} {
+    background-image: url("../img/sunset-desktop@2x.jpg"),
+      linear-gradient(90deg, $light-red 844px, $white 844px);
+  }
+
+  background-size: 844px 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: left 12px center, left 12px center;
+}
+
+.questions__window {
+  margin-right: -12px;
+}
